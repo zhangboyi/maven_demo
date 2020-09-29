@@ -1,12 +1,13 @@
 import org.junit.jupiter.api.Test;
 import static boyi.HelloWorld.printNum;
 import static boyi.HelloWorld.printStr;
+import static org.junit.Assert.assertTrue;
 
 public class TestHelloWorld {
 
     @Test
     public void testhello1(){
-        assert 3==printNum(3);
+        assertTrue(3==printNum(3)) ;
 
     }
     @Test
