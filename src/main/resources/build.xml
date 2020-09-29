@@ -13,7 +13,7 @@
     <!--源代码路径-->
     <property name="checkOrderSrcpath" value="/var/lib/jenkins/workspace/maven_test" />
     <!--.class文件路径-->
-    <property name="checkOrderClasspath" value="/var/lib/jenkins/workspace/maven_test/target/classes/" />
+    <property name="checkOrderClasspath" value="/var/lib/jenkins/workspace/maven_test/target/" />
 
     <!--让ant知道去哪儿找JaCoCo-->
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
