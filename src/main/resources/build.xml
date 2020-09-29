@@ -3,17 +3,17 @@
     <!--JaCoCo的安装路径-->
     <property name="jacocoantPath" value="/opt/jacoco-0.8.7/lib/jacocoant.jar"/>
     <!--最终生成.exec文件的路径，JaCoCo就是根据这个文件生成最终的报告的-->
-    <property name="jacocoexecPath" value="./jacoco.exec"/>
+    <property name="jacocoexecPath" value="../../../jacoco.exec"/>
     <!--生成覆盖率报告的路径-->
-    <property name="reportfolderPath" value="./report/"/>
+    <property name="reportfolderPath" value="../../../report/"/>
     <!--远程tomcat服务或者应用的ip地址-->
     <property name="server_ip" value="127.0.0.1"/>
     <!--前面配置的远程tomcat服务或者应用打开的端口，要跟上面配置的一样-->
     <property name="server_port" value="8083"/>
     <!--源代码路径-->
-    <property name="checkOrderSrcpath" value="." />
+    <property name="checkOrderSrcpath" value="../../../" />
     <!--.class文件路径-->
-    <property name="checkOrderClasspath" value="./target/" />
+    <property name="checkOrderClasspath" value="../../../target/" />
 
     <!--让ant知道去哪儿找JaCoCo-->
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
