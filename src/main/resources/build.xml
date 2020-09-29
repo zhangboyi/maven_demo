@@ -11,7 +11,7 @@
     <!--前面配置的远程tomcat服务或者应用打开的端口，要跟上面配置的一样-->
     <property name="server_port" value="8083"/>
     <!--源代码路径-->
-    <property name="checkOrderSrcpath" value="/var/lib/jenkins/workspace/maven_test" />
+    <property name="checkOrderSrcpath" value="/var/lib/jenkins/workspace/maven_test/" />
     <!--.class文件路径-->
     <property name="checkOrderClasspath" value="/var/lib/jenkins/workspace/maven_test/target/" />
 
