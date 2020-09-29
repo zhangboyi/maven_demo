@@ -1,22 +1,23 @@
+import junit.framework.TestCase;
 import org.junit.jupiter.api.Test;
 import static boyi.HelloWorld.printNum;
 import static boyi.HelloWorld.printStr;
 import static org.junit.Assert.assertTrue;
 
-public class TestHelloWorld {
+public class TestHelloWorld extends TestCase {
 
     @Test
-    public void testhello1(){
+    public void testHello1(){
         assertTrue(3==printNum(3)) ;
 
     }
     @Test
-    public void testhello2(){
+    public void testHello2H(){
         assert 0==printNum(2);
 
     }
     @Test
-    public void testhello3(){
+    public void testHello3(){
         assert "hello".equals(printStr("hello"));
     }
 }
