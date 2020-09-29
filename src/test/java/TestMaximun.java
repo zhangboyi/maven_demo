@@ -1,8 +1,7 @@
-package boyi;
-
 /**
  * Created by hqj on 2017/7/30.
  */
+import boyi.SubArray;
 import junit.framework.TestCase;
 
 /**.sau.maximun.SubArray;
