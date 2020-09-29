@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 import static boyi.HelloWorld.printNum;
 import static boyi.HelloWorld.printStr;
 
-public class testHelloWorld {
+public class TestHelloWorld {
 
     @Test
     public void testhello1(){
