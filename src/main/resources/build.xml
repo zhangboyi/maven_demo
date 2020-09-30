@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="maven_test" xmlns:jacoco="antlib:org.jacoco.ant" default="jacoco">
+<project name="maven_test" xmlns:jacoco="antlib:org.jacoco.ant">
     <!--JaCoCo的安装路径-->
     <property name="jacocoantPath" value="/opt/jacoco-0.8.7/lib/jacocoant.jar"/>
     <!--最终生成.exec文件的路径，JaCoCo就是根据这个文件生成最终的报告的-->
@@ -25,7 +25,7 @@
         根据前面配置的ip地址，和端口号，
         访问目标tomcat服务或者应用，并生成.exec文件。-->
     <target name="dump">
-        <jacoco:dump address="${server_ip}" reset="false" destfile="${jacocoexecPath}" port="${server_port}" append="true" debug="on"/>
+        <jacoco:dump address="${server_ip}" reset="false" destfile="${jacocoexecPath}" port="${server_port}" append="true" />
     </target>
 
     <!--JaCoCo任务:
