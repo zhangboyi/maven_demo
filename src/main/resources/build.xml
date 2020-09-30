@@ -47,7 +47,7 @@
                         <fileset dir="${Classpath}" />
                     </classfiles>
                     <sourcefiles encoding="utf-8">
-                        <fileset dir="${sourcecode}" />
+                        <fileset dir="${sourcecode}/src" />
                     </sourcefiles>
                 </group>
             </structure>
