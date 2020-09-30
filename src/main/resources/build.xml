@@ -24,8 +24,8 @@
     <!--dump任务:
         根据前面配置的ip地址，和端口号，
         访问目标tomcat服务或者应用，并生成.exec文件。-->
-    <target name="dump" debug="on">
-        <jacoco:dump address="${server_ip}" reset="false" destfile="${jacocoexecPath}" port="${server_port}" append="true"/>
+    <target name="dump">
+        <jacoco:dump address="${server_ip}" reset="false" destfile="${jacocoexecPath}" port="${server_port}" append="true" debug="on"/>
     </target>
 
     <!--JaCoCo任务:
