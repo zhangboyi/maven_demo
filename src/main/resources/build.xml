@@ -5,7 +5,7 @@
     <!--源代码路径-->
     <property name="sourcecode" value="/var/lib/jenkins/workspace/maven_test" />
     <!--JaCoCo的安装路径-->
-    <property name="jacocoantPath" value="/opt/jacoco-0.8.7/lib/jacocoant.jar"/>
+    <property name="jacocoantPath" value="/opt/jacoco/lib/jacocoant.jar"/>
     <!--最终生成.exec文件的路径，JaCoCo就是根据这个文件生成最终的报告的-->
     <property name="jacocoexecPath" value="${sourcecode}/jacoco.exec"/>
     <!--生成覆盖率报告的路径-->
