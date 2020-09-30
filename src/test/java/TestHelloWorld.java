@@ -1,5 +1,3 @@
-package boyi;
-
 import junit.framework.TestCase;
 
 import static boyi.HelloWorld.printNum;
