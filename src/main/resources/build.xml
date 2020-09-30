@@ -13,7 +13,8 @@
     <!--源代码路径-->
     <property name="checkOrderSrcpath" value="../../../" />
     <!--.class文件路径-->
-    <property name="checkOrderClasspath" value="../../../target/" />
+    <property name="checkOrderClasspath" value="../../../target/classes" />
+    <property name="checkOrderClasspath2" value="../../../target/test-classes" />
 
     <!--让ant知道去哪儿找JaCoCo-->
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
@@ -43,6 +44,7 @@
                 <group name="Check Order related">
                     <classfiles>
                         <fileset dir="${checkOrderClasspath}" />
+                        <fileset dir="${checkOrderClasspath2}" />
                     </classfiles>
                     <sourcefiles encoding="gbk">
                         <fileset dir="${checkOrderSrcpath}" />
