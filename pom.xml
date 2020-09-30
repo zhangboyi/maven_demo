@@ -17,12 +17,12 @@
 
 
         <!-- Test Start -->
-<!--        <dependency>
+        <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>org.jacoco.agent</artifactId>
             <version>0.7.7.201606060606</version>
             <classifier>runtime</classifier>
-        </dependency>-->
+        </dependency>
         <!-- Test End -->
         <dependency>
             <groupId>junit</groupId>
@@ -32,7 +32,7 @@
         </dependency>
     </dependencies>
 
-    <!--<build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -69,7 +69,7 @@
                 </executions>
             </plugin>
         </plugins>
-    </build>-->
+    </build>
 
 
 </project>
