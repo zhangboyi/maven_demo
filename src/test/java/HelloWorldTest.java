@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.springframework.util.Assert;
 import org.junit.Test;
 
-public class TestHelloWorld {
+public class HelloWorldTest {
 
     @Test
     public void testHello1(){
