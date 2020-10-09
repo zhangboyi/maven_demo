@@ -3,7 +3,6 @@ import static boyi.HelloWorld.printNum;
 import static boyi.HelloWorld.printStr;
 import static org.junit.Assert.assertTrue;
 
-import org.springframework.util.Assert;
 import org.junit.Test;
 
 public class HelloWorldTest {
