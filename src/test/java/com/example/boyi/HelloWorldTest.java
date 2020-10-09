@@ -1,4 +1,4 @@
-package com.test.boyi;
+package com.example.boyi;
 
 import com.example.boyi.HelloWorld;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package com.test.boyi; /**
+package com.example.boyi; /**
  * Created by hqj on 2017/7/30.
  */
 import com.example.boyi.SubArray;
