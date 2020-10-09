@@ -27,11 +27,12 @@
 <!--        </javac>-->
 <!--    </target>-->
     <target name="compile">
-        <echo>hhhhh</echo>
-<!--        <mkdir dir="${sourcecode}/classes"/>-->
-<!--        <javac srcdir="${sourcecode}/src/main/java" destdir="${sourcecode}/classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false">-->
+        <echo>编译</echo>
+        <delete dir="${sourcecode}/classes"></delete>
+        <mkdir dir="${sourcecode}/classes"/>
+        <javac srcdir="${sourcecode}/src/main/java" destdir="${sourcecode}/classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
 
-<!--        </javac>-->
+        </javac>
     </target>
 
     <!--dump任务:
