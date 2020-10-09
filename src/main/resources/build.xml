@@ -38,7 +38,7 @@
 
     <!-- Run the JUnit Tests -->
     <!-- Output is XML, could also be plain-->
-    <target name="junit" depends="compile">
+<!--    <target name="junit" depends="compile">
         <junit printsummary="on" fork="true" haltonfailure="yes">
             <classpath>
                 <pathelement location="${sourcecode}/classes/test-classes" />
@@ -50,7 +50,7 @@
                 </fileset>
             </batchtest>
         </junit>
-    </target>
+    </target>-->
 
 <!--    <target name="compile">
         <echo>编译</echo>
@@ -107,5 +107,5 @@
             <xml destfile="${reportfolderPath}/report.xml"/>
         </jacoco:report>
     </target>
-    <target name="rebuild" depends="compile,junit,dump,report"/>
+    <target name="rebuild" depends="compile,dump,report"/>
 </project>
