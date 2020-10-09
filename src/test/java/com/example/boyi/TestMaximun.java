@@ -1,7 +1,6 @@
 package com.example.boyi; /**
  * Created by hqj on 2017/7/30.
  */
-import com.example.boyi.SubArray;
 import junit.framework.TestCase;
 
 /**.sau.maximun.SubArray;

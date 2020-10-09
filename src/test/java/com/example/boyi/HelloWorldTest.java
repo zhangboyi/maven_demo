@@ -1,6 +1,5 @@
 package com.example.boyi;
 
-import com.example.boyi.HelloWorld;
 import org.junit.Assert;
 import org.junit.Test;
 
