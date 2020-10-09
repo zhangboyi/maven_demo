@@ -32,7 +32,7 @@
 
         </javac>
         <mkdir dir="${sourcecode}/classes/test-classes"/>
-        <javac srcdir="${sourcecode}/src/main/java/com/test/boyi" destdir="${sourcecode}/test-classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
+        <javac srcdir="${sourcecode}/src/main/java/com/test/boyi" destdir="${sourcecode}/classes/test-classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
 
         </javac>
     </target>
