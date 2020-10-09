@@ -31,11 +31,19 @@
             <version>5.2.9.RELEASE</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/junit/junit-dep -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
         </dependency>
+
 
 
     </dependencies>
