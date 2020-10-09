@@ -1,9 +1,9 @@
 package com.test.boyi;
 
 import com.example.boyi.HelloWorld;
-
 import org.junit.Assert;
 import org.junit.Test;
+
 
 public class HelloWorldTest {
     HelloWorld helloWorld = new HelloWorld();
