@@ -11,7 +11,7 @@
     <!--生成覆盖率报告的路径-->
     <property name="reportfolderPath" value="${sourcecode}/report/"/>
     <!--远程tomcat服务或者应用的ip地址-->
-    <property name="server_ip" value="127.0.0.1"/>
+    <property name="server_ip" value="10.65.229.121"/>
     <!--前面配置的远程tomcat服务或者应用打开的端口，要跟上面配置的一样-->
     <property name="server_port" value="8083"/>
 
