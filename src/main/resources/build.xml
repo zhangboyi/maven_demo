@@ -41,7 +41,7 @@
     <!--JaCoCo任务:
         根据前面配置的源代码路径和.class文件路径，
         根据dump后，生成的.exec文件，生成最终的html覆盖率报告。-->
-    <target name="report">
+    <target name="report" depends="dump">
         <delete dir="${reportfolderPath}" />
         <mkdir dir="${reportfolderPath}" />
 
@@ -53,7 +53,7 @@
             <structure name="JaCoCo Report">
                 <group name="output report">
                     <classfiles>
-                        <fileset dir="${Classpath}/classes">
+                        <fileset dir="${Classpath}">
 <!--                            <exclude name="**/maven-archiver"/>
                             <exclude name="**/surefire-reports"/>
                             <exclude name="**/maven-status"/>
@@ -67,6 +67,8 @@
             </structure>
 
             <html destdir="${reportfolderPath}" encoding="utf-8" />
+            <csv destfile="${reportfolderPath}/report.csv"/>
+            <xml destfile="${reportfolderPath}/report.xml"/>
         </jacoco:report>
     </target>
     <target name="rebuild" depends="compile,dump,report"/>
