@@ -61,7 +61,7 @@
                         </fileset>
                     </classfiles>
                     <sourcefiles encoding="utf-8">
-                        <fileset dir="${sourcecode}/src/java/main" />
+                        <fileset dir="${sourcecode}/src/main/java" />
                     </sourcefiles>
                 </group>
             </structure>
