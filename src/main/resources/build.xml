@@ -53,7 +53,7 @@
             <structure name="JaCoCo Report">
                 <group name="output report">
                     <classfiles>
-                        <fileset dir="${Classpath}">
+                        <fileset dir="${Classpath}/classes">
 <!--                            <exclude name="**/maven-archiver"/>
                             <exclude name="**/surefire-reports"/>
                             <exclude name="**/maven-status"/>
