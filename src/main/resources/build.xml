@@ -33,8 +33,7 @@
         根据前面配置的ip地址，和端口号，
         访问目标tomcat服务或者应用，并生成.exec文件。-->
     <target name="dump">
-        <javac debug="true" debuglevel="lines,vars,source">
-
+        <javac destdir="${Classpath}" srcdir="${sourcecode}/src" debug="true" debuglevel="lines,vars,source">
         </javac>
         <jacoco:dump address="${server_ip}" reset="true" destfile="${jacocoexecPath}" port="${server_port}" append="flase" />
 
