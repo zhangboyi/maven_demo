@@ -31,12 +31,13 @@
             <version>5.2.9.RELEASE</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>RELEASE</version>
+            <version>4.11</version>
         </dependency>
+
+
 
     </dependencies>
 
