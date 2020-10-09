@@ -35,9 +35,7 @@
         根据前面配置的ip地址，和端口号，
         访问目标tomcat服务或者应用，并生成.exec文件。-->
     <target name="dump" depends="compile">
-
         <jacoco:dump address="${server_ip}" reset="true" destfile="${jacocoexecPath}" port="${server_port}" append="flase" />
-
     </target>
 
     <!--JaCoCo任务:
@@ -56,14 +54,14 @@
                 <group name="output report">
                     <classfiles>
                         <fileset dir="${Classpath}">
-                            <exclude name="**/maven-archiver"/>
+<!--                            <exclude name="**/maven-archiver"/>
                             <exclude name="**/surefire-reports"/>
                             <exclude name="**/maven-status"/>
-                            <exclude name="**/surefire-reports"/>
+                            <exclude name="**/surefire-reports"/>-->
                         </fileset>
                     </classfiles>
                     <sourcefiles encoding="utf-8">
-                        <fileset dir="${sourcecode}/src" />
+                        <fileset dir="${sourcecode}/src/java/main" />
                     </sourcefiles>
                 </group>
             </structure>
