@@ -7,7 +7,7 @@ R
 "src/main/java/boyi/HelloWorld.java,8/2/8270830169fd1fc753c43ae261c44ef002a14901
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-Q
-!src/test/java/TestHelloWorld.java,f/7/f7ca5f53af8202735d612c925504ada7fbc3c8a7
 N
 src/test/java/TestMaximun.java,c/9/c978f4c7c15195ba1dd24c92fca7d8de9c8a84ce
+Q
+!src/test/java/HelloWorldTest.java,8/1/81aee700b73f7cf036bd494e157927e4fc40f10e

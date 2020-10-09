@@ -1,4 +1,4 @@
-package boyi;
+package com.test.boyi;
 
 
 public class SubArray {

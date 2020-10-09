@@ -1,6 +1,6 @@
 
-import static boyi.HelloWorld.printNum;
-import static boyi.HelloWorld.printStr;
+import static com.test.boyi.HelloWorld.printNum;
+import static com.test.boyi.HelloWorld.printStr;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
