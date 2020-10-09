@@ -1,4 +1,4 @@
-package com.test.boyi;
+package com.example.boyi;
 
 public class HelloWorld {
 

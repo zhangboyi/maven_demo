@@ -1,7 +1,7 @@
-/**
+package com.test.boyi; /**
  * Created by hqj on 2017/7/30.
  */
-import com.test.boyi.SubArray;
+import com.example.boyi.SubArray;
 import junit.framework.TestCase;
 
 /**.sau.maximun.SubArray;
@@ -22,9 +22,9 @@ public class TestMaximun extends TestCase {
         int result1 = sub.max(x, y);
         int result2 = sub.max(y,x);
         int result3 = sub.max(z, x);
-        assertTrue(result1 == y);
-        assertTrue(result2 == y);
-        assertTrue(result3 == 1);
+        TestCase.assertTrue(result1 == y);
+        TestCase.assertTrue(result2 == y);
+        TestCase.assertTrue(result3 == 1);
     }
 
     //对方法maxSubArr测试
@@ -37,9 +37,9 @@ public class TestMaximun extends TestCase {
         SubArray sub = new SubArray();
 
 
-        assertTrue(sub.maxSubArr(arr1) == 6);
-        assertTrue(sub.maxSubArr(arr2) == 14);
-        assertTrue(sub.maxSubArr(arr3) == -1);
-        assertTrue(sub.maxSubArr(arr4) == 2);
+        TestCase.assertTrue(sub.maxSubArr(arr1) == 6);
+        TestCase.assertTrue(sub.maxSubArr(arr2) == 14);
+        TestCase.assertTrue(sub.maxSubArr(arr3) == -1);
+        TestCase.assertTrue(sub.maxSubArr(arr4) == 2);
     }
 }

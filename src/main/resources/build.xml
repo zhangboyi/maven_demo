@@ -28,7 +28,8 @@
 <!--    </target>-->
     <target name="compile">
         <mkdir dir="${sourcecode}/classes"/>
-        <javac srcdir="${sourcecode}/src/main/java" destdir="${sourcecode}/classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false"/>
+        <javac srcdir="${sourcecode}/src/main/java" destdir="${sourcecode}/classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
+        </javac>
     </target>
 
     <!--dump任务:

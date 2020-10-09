@@ -1,6 +1,7 @@
+package com.test.boyi;
 
-import static com.test.boyi.HelloWorld.printNum;
-import static com.test.boyi.HelloWorld.printStr;
+import static com.example.boyi.HelloWorld.printNum;
+import static com.example.boyi.HelloWorld.printStr;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -9,7 +10,7 @@ public class HelloWorldTest {
 
     @Test
     public void testHello1(){
-        assertTrue(3==printNum(3)) ;
+        Assert.assertTrue(3==printNum(3)) ;
 
     }
     @Test
