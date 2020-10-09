@@ -34,8 +34,9 @@
         访问目标tomcat服务或者应用，并生成.exec文件。-->
     <target name="dump">
         <javac debug="true" debuglevel="lines,vars,source">
-            <jacoco:dump address="${server_ip}" reset="true" destfile="${jacocoexecPath}" port="${server_port}" append="flase" />
+
         </javac>
+        <jacoco:dump address="${server_ip}" reset="true" destfile="${jacocoexecPath}" port="${server_port}" append="flase" />
 
     </target>
 
