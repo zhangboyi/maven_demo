@@ -94,7 +94,7 @@
                             <exclude name="**/surefire-reports"/>
                             <exclude name="**/maven-status"/>
                             <exclude name="**/surefire-reports"/>
-            s            </fileset>
+                        </fileset>
                     </classfiles>
                     <sourcefiles encoding="utf-8">
                         <fileset dir="${sourcecode}/src/main/java" />
