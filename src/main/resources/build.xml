@@ -26,15 +26,15 @@
 <!--        <javac destdir="${Classpath}" srcdir="${sourcecode}/src" debug="true" debuglevel="lines,vars,source">-->
 <!--        </javac>-->
 <!--    </target>-->
-    <target name="compile" description="compile the source">
+<!--    <target name="compile" description="compile the source">
         <echo>编译</echo>
         <delete dir="${sourcecode}/classes"></delete>
         <mkdir dir="${sourcecode}/classes"/>
         <mkdir dir="${sourcecode}/classes/test-classes"/>
-        <!-- Compile the java code from ${src} into ${build} -->
+        &lt;!&ndash; Compile the java code from ${src} into ${build} &ndash;&gt;
         <javac srcdir="${sourcecode}/src/main/java" destdir="${sourcecode}/classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false" />
         <javac srcdir="${sourcecode}/src/test/java" destdir="${sourcecode}/classes/test-classes" debug="true" debuglevel="lines,vars,source" includeantruntime="false" />
-    </target>
+    </target>-->
 
     <!-- Run the JUnit Tests -->
     <!-- Output is XML, could also be plain-->
@@ -70,7 +70,7 @@
     <!--dump任务:
         根据前面配置的ip地址，和端口号，
         访问目标tomcat服务或者应用，并生成.exec文件。-->
-    <target name="dump" depends="compile">
+    <target name="dump">
         <jacoco:dump address="${server_ip}" reset="true" destfile="${jacocoexecPath}" port="${server_port}" append="flase" />
     </target>
 
@@ -107,5 +107,5 @@
             <xml destfile="${reportfolderPath}/report.xml"/>
         </jacoco:report>
     </target>
-    <target name="rebuild" depends="compile,dump,report"/>
+    <target name="rebuild" depends="dump,report"/>
 </project>
