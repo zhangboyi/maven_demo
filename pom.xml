@@ -11,45 +11,19 @@
         <jacoco.version>0.7.5.201505241946</jacoco.version>
     </properties>
     <dependencies>
-
-
-
-
-
-        <!-- Test Start -->
-<!--        <dependency>
+        <!-- 添加jacoco依赖 Test Start -->
+        <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>org.jacoco.agent</artifactId>
-            <version>0.7.7.201606060606</version>
+            <version>${jacoco.version}</version>
             <classifier>runtime</classifier>
-        </dependency>-->
+        </dependency>
         <!-- Test End -->
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.2.9.RELEASE</version>
-            <!--<scope>compile</scope>-->
-        </dependency>
-<!--        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>RELEASE</version>
-        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/junit/junit-dep -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-         <!--   <scope>compile</scope>-->
-        </dependency>
-
-
-
     </dependencies>
 
- <!--   <build>
+    <build>
         <plugins>
+            <!--输出报告 -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -78,6 +52,7 @@
                             <goal>report</goal>
                         </goals>
                         <configuration>
+                            <!--配置报告输出地址 -->
                             <dataFile>target/jacoco.exec</dataFile>
                             <outputDirectory>target/jacoco-ut</outputDirectory>
                         </configuration>
@@ -85,7 +60,6 @@
                 </executions>
             </plugin>
         </plugins>
-    </build>-->
-
-
+    </build>
 </project>
+

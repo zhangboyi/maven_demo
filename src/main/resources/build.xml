@@ -89,12 +89,12 @@
             <structure name="JaCoCo Report">
                 <group name="output report">
                     <classfiles>
-                        <fileset dir="${sourcecode}/classes">
-<!--                            <exclude name="**/maven-archiver"/>
+                        <fileset dir="${Classpath}">
+                            <exclude name="**/maven-archiver"/>
                             <exclude name="**/surefire-reports"/>
                             <exclude name="**/maven-status"/>
-                            <exclude name="**/surefire-reports"/>-->
-                        </fileset>
+                            <exclude name="**/surefire-reports"/>
+            s            </fileset>
                     </classfiles>
                     <sourcefiles encoding="utf-8">
                         <fileset dir="${sourcecode}/src/main/java" />
