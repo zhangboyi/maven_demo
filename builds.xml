@@ -3,7 +3,7 @@
     <!--源代码路径-->
 <!--    <property name="sourcecode" value="/var/lib/jenkins/workspace/maven_test" />-->
     <property name="jacocoantPath" value="/opt/jacoco/lib/jacocoant.jar"/>
-    <property name="integrationJacocoexecPath" value="${sourcecode}/jacoco-integration.exec"/>
+    <property name="integrationJacocoexecPath" value="./jacoco-integration.exec"/>
     <property name="result.dir" location="./target"/>
     <property name="result.classes.dir" location="${result.dir}/classes"/>
     <property name="src.dir" location="./src/main/java"/>
