@@ -14,23 +14,10 @@
         <mkdir dir="${result.classes.dir}"/>
         <javac srcdir="${src.dir}" destdir="${result.classes.dir}" debug="true" includeantruntime="false"/>
     </target>
-<!--    <target name="test" depends="compile">-->
-<!--        &lt;!&ndash;  Step 2: Wrap test execution with the JaCoCo coverage task  &ndash;&gt;-->
-<!--        <jacoco:coverage destfile="${result.exec.file}">-->
-<!--            <java classname="org.jacoco.examples.parser.Main" fork="true">-->
-<!--                <classpath path="${result.classes.dir}"/>-->
-<!--                <arg value="2 * 3 + 4"/>-->
-<!--                <arg value="2 + 3 * 4"/>-->
-<!--                <arg value="(2 + 3) * 4"/>-->
-<!--                <arg value="2 * 2 * 2 * 2"/>-->
-<!--                <arg value="1 + 2 + 3 + 4"/>-->
-<!--                <arg value="2 * 3 + 2 * 5"/>-->
-<!--            </java>-->
-<!--        </jacoco:coverage>-->
-<!--    </target>-->
-
     <target name="dump" depends="compile">
         <jacoco:dump address="10.65.229.121" port="8083" reset="true" destfile="${integrationJacocoexecPath}" append="false"/>
     </target>
     <target name="rebuild" depends="dump,compile"/>
 </project>
+
+

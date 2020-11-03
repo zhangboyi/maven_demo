@@ -3,13 +3,15 @@
 
 <!--    <jacoco:agent property="-javaagent:/opt/jacoco-0.8.7/lib/]jacocoagent.jar=includes=*,output=tcpserver,port=8083,address=127.0.0.1,append=true -Xverify:none"/>-->
     <!--源代码路径-->
-    <property name="sourcecode" value="/var/lib/jenkins/workspace/maven_test" />
+    <property name="sourcecode" value="/var/lib/jenkins/workspace/maven_test2" />
     <!--JaCoCo的安装路径-->
     <property name="jacocoantPath" value="/opt/jacoco/lib/jacocoant.jar"/>
     <!--最终生成.exec文件的路径，JaCoCo就是根据这个文件生成最终的报告的-->
     <property name="jacocoexecPath" value="${sourcecode}/jacoco.exec"/>
     <!--生成覆盖率报告的路径-->
     <property name="reportfolderPath" value="${sourcecode}/report/"/>
+
+
     <!--远程tomcat服务或者应用的ip地址-->
     <property name="server_ip" value="10.65.229.121"/>
     <!--前面配置的远程tomcat服务或者应用打开的端口，要跟上面配置的一样-->
@@ -22,6 +24,10 @@
     <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
         <classpath path="${jacocoantPath}" />
     </taskdef>
+    <target name="compile">
+        <mkdir dir="${Classpath}"/>
+        <javac srcdir="${sourcecode}/src/main/java" destdir="${Classpath}" debug="true" includeantruntime="false"/>
+    </target>
 
     <!--dump任务:
         根据前面配置的ip地址，和端口号，
